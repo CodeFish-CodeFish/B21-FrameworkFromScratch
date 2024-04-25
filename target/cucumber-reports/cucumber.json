@@ -1,0 +1,162 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-25T01:47:05.763Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4132737000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.step_definitions.LumaHook.startUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Positive scenario to create an account",
+        "description": "",
+        "id": "create-account-functionality;positive-scenario-to-create-an-account",
+        "after": [
+          {
+            "result": {
+              "duration": 219630000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.step_definitions.LumaHook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2233234000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on main page of Luma user clicks on create account link",
+            "match": {
+              "location": "com.step_definitions.StepDef.user_is_on_main_page_of_luma_user_clicks_on_create_account_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 253683000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters firstname and lastname as follows",
+            "match": {
+              "location": "com.step_definitions.StepDef.user_enters_firstname_and_lastname_as_follows(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "Thomas"
+                ]
+              },
+              {
+                "cells": [
+                  "lastname",
+                  "Shelby"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 157138000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters email and password as follows",
+            "match": {
+              "location": "com.step_definitions.StepDef.user_enters_email_and_password_as_follows(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "thomas@fff.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "ZXCVBNm!2$"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64758000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user confirms entered password as follows",
+            "match": {
+              "location": "com.step_definitions.StepDef.user_confirms_entered_password_as_follows(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "confirmPassword",
+                  "ZXCVBNm!2$"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2980470000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on create account button",
+            "match": {
+              "location": "com.step_definitions.StepDef.user_clicks_on_create_account_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 47481000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user validates success message as follows",
+            "match": {
+              "location": "com.step_definitions.StepDef.user_validates_success_message_as_follows(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "successMessage",
+                  "Thank you for registering with Main Website Store."
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create account functionality",
+    "description": "",
+    "id": "create-account-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/luma_features/create_account/createAccount.feature",
+    "tags": []
+  }
+]
